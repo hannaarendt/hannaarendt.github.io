@@ -1,0 +1,48 @@
+---
+import '../styles/global.css'; 
+import Body from '../components/Body.astro';
+---
+
+<!doctype html>
+<Body>
+  <main>
+    <div class="container">
+      <div class="image-container">
+        <img src="/images/hanna.png" alt="me">
+      </div>
+      <div class="info-text">
+        <p>hello! my name is hanna and i like semlor, the color pink, taylor swift, horses, and jane austen. i'm currently studying my second year at LTH, a master of science in engineering in information and communication technologies.</p>
+      </div>
+    </div>
+  </main>
+</Body>
+</html>
+
+<style>
+  .container {
+    display: flex;
+    width: 95%;
+  }
+
+  .image-container {
+    flex: 1;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto; /* Gör så att bilden bibehåller sin proportion */
+    border-radius: 10%;
+  }
+
+  .info-text {
+    flex: 2;
+    padding: 2em;
+    background-color: #fbb2d6;
+    border-radius: 20px;
+
+    border-color: #fb9ac6;
+    border-width: 20px;
+    border-style:double;
+  }
+
+</style>

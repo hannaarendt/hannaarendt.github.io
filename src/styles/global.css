@@ -1,0 +1,95 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+    background-color: #fae7b5; /* #FAF1B3 */
+    
+    background-image:
+    url("/images/icecreamdrip.png"),
+    url("/images/waffle.png");
+
+    /* Inställningar för varje bild */
+    background-repeat: repeat-x, repeat; /* Smält glass repeteras bara i x-led, våfflan repeteras överallt */
+    background-position: top, center; /* Smält glass längst upp, våfflan centrerad */
+    /* background-attachment: scroll, fixed; */
+    }
+
+    h1, h2, h3, h4, p {
+        font-family: 'MilkyVintage', sans-serif;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: #eb8c56;
+        color: #fae7b5;
+        font-weight: normal;
+        margin: 0px;
+    }
+
+    h1, h2, h3, h4 {
+        text-shadow: 1px 1px 3px gray;
+        text-align: center;  
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    p {
+        font-size: 50px;
+        text-align: justify;
+    }
+    
+    /* nav styles */
+    
+    .nav-links {
+        width: 100%;
+        top: 5rem;
+        left: 48px;
+        background-color: #ff9776;
+        display: none;
+        margin: 0;
+    }
+    
+    .nav-links a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .nav-links a:hover,
+    .nav-links a:focus {
+        background-color: #ff9776;
+    }
+    
+    .expanded {
+        display: unset;
+    }
+    
+    @media screen and (min-width: 636px) {
+        .nav-links {
+        margin-left: 5em;
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+        }
+
+        .nav-links a {
+        display: inline-block;
+        padding: 15px 20px;
+        }
+    
+    }
+
+    @font-face {
+        font-family: 'MilkyVintage';
+        src: url('/fonts/MilkyVintage-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
