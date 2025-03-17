@@ -1,17 +1,17 @@
-body {
-    max-width: 100%;
-    overflow-x: hidden;
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
 
-    background-color: #fae7b5; /* #FAF1B3 */
-    
-    background-image:
-    url("/images/icecreamdrip.png"),
-    url("/images/waffle.png");
+        background-color: #fae7b5; /* #FAF1B3 */
+        
+        background-image:
+        url("/images/icecreamdrip.png"),
+        url("/images/waffle.png");
 
-    /* Inställningar för varje bild */
-    background-repeat: repeat-x, repeat; /* Smält glass repeteras bara i x-led, våfflan repeteras överallt */
-    background-position: top, center; /* Smält glass längst upp, våfflan centrerad */
-    /* background-attachment: scroll, fixed; */
+        /* Inställningar för varje bild */
+        background-repeat: repeat-x, repeat; /* Smält glass repeteras bara i x-led, våfflan repeteras överallt */
+        background-position: top, center; /* Smält glass längst upp, våfflan centrerad */
+        /* background-attachment: scroll, fixed; */
     }
 
     h1, h2, h3, h4, p {
@@ -21,10 +21,10 @@ body {
         color: #fae7b5;
         font-weight: normal;
         margin: 0px;
+        text-shadow: 1px 1px 2px black;
     }
 
     h1, h2, h3, h4 {
-        text-shadow: 1px 1px 3px gray;
         text-align: center;  
     }
 
@@ -37,7 +37,7 @@ body {
     }
 
     p {
-        font-size: 50px;
+        font-size: 3vw;
         text-align: justify;
     }
     
