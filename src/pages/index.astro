@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'; 
 import Body from '../components/Body.astro'; 
+import { text } from '../content/text.js';
 ---
 
 <!doctype html>
@@ -11,8 +12,12 @@ import Body from '../components/Body.astro';
         <img src="/images/hanna2.png" alt="me">
       </div>
       <div class="info-text">
-        <p id="text">hello! my name is hanna and i like semlor, the color pink, taylor swift, horses, and jane austen. i'm currently studying my second year at LTH, a master of science in engineering in information and communication technologies.</p>
+        <p id="text">{text.short}</p>
       </div>
+    </div>
+    <div class="long-text">
+      <p id="longtext">{text.long}</p>
+      <p id="longtext2">{text.long2}</p>
     </div>
   </main>
 </Body>
@@ -44,13 +49,33 @@ import Body from '../components/Body.astro';
     background-image: url("/images/icecreamcontainer.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    aspect-ratio: 1 / 0.75;
+    aspect-ratio: 1 / 0.55;
 
     /* filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3)); */
   }
 
+  .long-text {
+    background-image: url("/images/icecreamcontainer2.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Se till att hela bilden syns */
+    background-size: 100% auto;
+
+    align-items: center; /* Centrerar texten vertikalt */
+    justify-content: center; /* Centrerar texten horisontellt */
+    aspect-ratio: 1 / 0.7; /* Justera för att passa bildens proportioner */
+    align-items: center; /* Centrerar texten vertikalt */
+  }
+
   #text {
     padding: 2em;
+  }
+
+  #longtext {
+    padding: 5em 3em 0;
+  }
+
+  #longtext2 {
+    padding: 1em 2em 5em 5em;
   }
 
 </style>
