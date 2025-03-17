@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css'; 
-import Body from '../components/Body.astro';
+import Body from '../components/Body.astro'; 
 ---
 
 <!doctype html>
@@ -8,10 +8,10 @@ import Body from '../components/Body.astro';
   <main>
     <div class="container">
       <div class="image-container">
-        <img src="/images/hanna.png" alt="me">
+        <img src="/images/hanna2.png" alt="me">
       </div>
       <div class="info-text">
-        <p>hello! my name is hanna and i like semlor, the color pink, taylor swift, horses, and jane austen. i'm currently studying my second year at LTH, a master of science in engineering in information and communication technologies.</p>
+        <p id="text">hello! my name is hanna and i like semlor, the color pink, taylor swift, horses, and jane austen. i'm currently studying my second year at LTH, a master of science in engineering in information and communication technologies.</p>
       </div>
     </div>
   </main>
@@ -31,18 +31,26 @@ import Body from '../components/Body.astro';
   .image-container img {
     width: 100%;
     height: auto; /* Gör så att bilden bibehåller sin proportion */
-    border-radius: 10%;
   }
 
   .info-text {
     flex: 2;
-    padding: 2em;
-    background-color: #fbb2d6;
-    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Gör att texten lägger sig naturligt inuti */
+    align-items: center; /* Centrerar texten horisontellt */
+    text-align: center;
+    
+    background-image: url("/images/icecreamcontainer.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    aspect-ratio: 1 / 0.75;
 
-    border-color: #fb9ac6;
-    border-width: 20px;
-    border-style:double;
+    /* filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3)); */
+  }
+
+  #text {
+    padding: 2em;
   }
 
 </style>
